@@ -27,7 +27,7 @@ Automobile.prototype.logMe = function(extendedStyle) {
 }
 
 // Intiliaze automobile objects
-var automobiles = [ 
+let automobiles = [ 
     new Automobile(1995, "Honda", "Accord", "Sedan"),
     new Automobile(1990, "Ford", "F-150", "Pickup"),
     new Automobile(2000, "GMC", "Tahoe", "SUV"),
@@ -71,8 +71,8 @@ function yearComparator(auto1, auto2) {
 // Compares two automobiles based on their make. Makes which are earlier in the alphabet are "greater".
 function makeComparator(auto1, auto2) {
     // Comvert to lower case
-    var make1 = auto1.make.toLowerCase();
-    var make2 = auto2.make.toLowerCase();
+    let make1 = auto1.make.toLowerCase();
+    let make2 = auto2.make.toLowerCase();
 
     // Compare characters of each respective auto's make
     for (let i = 0; i < make1.length; i++) {
@@ -89,8 +89,8 @@ function makeComparator(auto1, auto2) {
 
 
 function typeComparator(auto1, auto2) {
-    var type1 = auto1.type.toLowerCase();
-    var type2 = auto2.type.toLowerCase();
+    let type1 = auto1.type.toLowerCase();
+    let type2 = auto2.type.toLowerCase();
 
     if (typeValue(type1) > typeValue(type2)) {
         return true;
