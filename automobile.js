@@ -86,8 +86,6 @@ function makeComparator(auto1, auto2) {
 
 
 // Compares automobiles based on their type. Ordering from "greatest" to "least" is: roadster, pickup, suv, wagon, sedan.
-
-
 function typeComparator(auto1, auto2) {
     let type1 = auto1.type.toLowerCase();
     let type2 = auto2.type.toLowerCase();
